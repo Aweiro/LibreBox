@@ -1,0 +1,33 @@
+.login {
+	height: 100%;
+}
+
+.login__area {
+	width: 70vw;
+	height: 70vh;
+	border-radius: 50px;
+	background-color: lightslategray;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.login__container {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.login__form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.login__area-img {
+	width: 100px;
+	height: 100px;
+}
