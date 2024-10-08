@@ -13,6 +13,7 @@
 	justify-content: space-around;
 	row-gap: 30px;
 	align-items: center;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 	img {
 		height: 100%;
@@ -27,16 +28,29 @@
 }
 
 .login__area-photo {
-	flex: 1;
+	// flex: 1;
+	position: absolute;
+	top: -50px;
 }
 
 .login__form {
+	position: relative;
 	display: flex;
-	flex: 2;
+	// flex: 2;
 	flex-direction: column;
-	justify-content: space-evenly;
+	// justify-content: space-evenly;
+	row-gap: 10px;
 	align-items: center;
 	width: auto;
+	height: auto;
+	padding: 70px 40px 30px 40px;
+	border-radius: 30px;
+	background-color: rgb(200, 190, 202, 0.2);
+	// box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	// background: linear-gradient(rgba(175, 178, 205), rgb(200, 190, 202, 0,5) 10%)
+	// opacity: 10%;
+	
 }
 
 .login__area-photo {
@@ -46,6 +60,10 @@
 .login__area-img {
 	width: 100px;
 	height: 100px;
+	path {
+		
+	fill: rgb(60, 82, 114);
+	}
 }
 
 // .login__select {
@@ -62,10 +80,14 @@
 }
 .uk-button-profile {
 	width: 100%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
 }
 
 .uk-sign-up {
 	margin: 0 auto;
+
 }
 
 .login__sign-in-up {
@@ -76,6 +98,12 @@
 	// padding-right: 1.5em;
 }
 
-.login__form-block {
-	
+.uk-input {
+	// height: auto;
+	// background: none;
+	background-color: rgb(60, 82, 114);
+	border-color: rgb(130, 138, 164);
+	&:focus {
+		background-color: rgb(50, 70, 100);
+	}
 }

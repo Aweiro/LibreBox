@@ -71,6 +71,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .login__area img {
   height: 100%;
@@ -90,29 +92,30 @@ img {
 }
 
 .login__area-photo {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  position: absolute;
+  top: -50px;
 }
 
 .login__form {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  row-gap: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: auto;
+  height: auto;
+  padding: 70px 40px 30px 40px;
+  border-radius: 30px;
+  background-color: rgba(200, 190, 202, 0.2);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .login__area-photo {
@@ -124,6 +127,9 @@ img {
   width: 100px;
   height: 100px;
 }
+.login__area-img path {
+  fill: rgb(60, 82, 114);
+}
 
 .uk-button {
   height: 3em;
@@ -133,6 +139,9 @@ img {
 
 .uk-button-profile {
   width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 .uk-sign-up {
@@ -150,6 +159,14 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.uk-input {
+  background-color: rgb(60, 82, 114);
+  border-color: rgb(130, 138, 164);
+}
+.uk-input:focus {
+  background-color: rgb(50, 70, 100);
 }
 
 .login__dialog-text {
