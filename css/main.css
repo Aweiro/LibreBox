@@ -231,12 +231,14 @@ img {
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.login__dialog button {
+
+.login__dialog-close {
   position: absolute;
-  width: 100px;
-  height: 20px;
-  right: 0;
-  bottom: 0;
+  right: 15px;
+  top: 10px;
+}
+.login__dialog-close:hover {
+  color: black;
 }
 
 .login__dialog-wrapper {
