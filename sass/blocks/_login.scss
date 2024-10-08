@@ -3,13 +3,15 @@
 }
 
 .login__area {
+	padding: 15px;
 	width: 70vw;
 	height: 70vh;
 	border-radius: 50px;
 	background-color: lightslategray;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: center;
+	row-gap: 30px;
 	align-items: center;
 }
 
@@ -20,14 +22,31 @@
 	align-items: center;
 }
 
+.login__area-photo {
+	flex: 1;
+}
+
 .login__form {
 	display: flex;
+	flex: 2;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	width: auto;
+}
+
+.login__area-photo {
+	align-content: center;
 }
 
 .login__area-img {
 	width: 100px;
 	height: 100px;
 }
+
+// .login__select {
+// 	width: 15rem;
+// 	height: 70px;
+// 	border-radius: 20px;
+// }
+
